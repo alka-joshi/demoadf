@@ -1,0 +1,19 @@
+{
+	"name": "ds_hospital_sink_pq",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "cleansed"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
